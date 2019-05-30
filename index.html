@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <title>Pogoda</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="pogoda,prognoza,temperatura">
+    <meta name="description" content="Prognoza pogody dla wybranego miasta">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">    <link href="style.css" rel="stylesheet" type="text/css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>    
+</head>
+<body>
+    <div class="top-content">
+        <div class="container">
+            <header class="header">
+                <a class="logo">Pogoda</a>
+            </header>
+            <section class="search">
+                <div class="errors" id="errors">Nie znaleziono podanego miasta</div>
+                <label class="labelSearch" for="cityName">
+                    <input class="inputSearch" id="cityName" type="text">
+                </label>
+                <button class="searchButton" id="searchCity">Szukaj</button>
+            </section>
+        </div>
+    </div>
+    <div class="bottom-content" id="bottom_content">
+        <div class="container">
+            <section class="weather">
+                <h2>Pogoda dla miasta: <span id="city"></span></h2>
+                <h3>Położenie geograficzne</h3>
+                 <ul id="place_info"></ul>
+                <h3>Informacje</h3>
+                 <ul id="weather_info"></ul>
+                <h3>Wiatr</h3>
+                 <ul id="wind"></ul>
+                <h3>Pogoda</h3>
+                 <ul id="description"></ul>
+            </section>
+            <div class="scroll_top">
+                <a id="scroll_top">
+                    <img src="https://image.flaticon.com/icons/svg/78/78326.svg" />
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="weahter.js"></script>
+    </body>
+
+</html>
